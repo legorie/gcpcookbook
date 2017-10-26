@@ -19,7 +19,7 @@ exports.calculator = function calculator(req, res) {
     if (isNaN(req.body.number1) || isNaN(req.body.number2)) {
         console.error("Invalid Numbers");			// different logging
         error = "Invalid Numbers!";
-        res.status(200).send(error);
+        res.status(400).send(error);
 
     }
 
@@ -42,14 +42,14 @@ exports.calculator = function calculator(req, res) {
             if(req.body.number2 === 0){
             	console.error("The divisor cannot be 0");
                 error = "The divisor cannot be 0";
-                res.status(200).send(error);
+                res.status(400).send(error);
             }
             else{
                 result = req.body.number1/req.body.number2;
             }
             break;
         default:
-            res.status(200).send("Invalid operand");
+            res.status(400).send("Invalid operand");
             break;
     }
     console.log("The Result is: " + result);
