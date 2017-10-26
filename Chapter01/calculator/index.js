@@ -4,7 +4,7 @@
  * @param {!Object} req Cloud Function request context.
  * @param {!Object} res Cloud Function response context.
  */
-exports.Calculator = function Calculator(req, res) {
+exports.calculator = function calculator(req, res) {
   
   if (req.body.operand === undefined) {
     res.status(400).send('No operand defined!');
