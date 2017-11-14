@@ -36,7 +36,6 @@ CREATE TABLE `employees` (
   PRIMARY KEY (`employeeNumber`),
   KEY `reportsTo` (`reportsTo`),
   KEY `officeCode` (`officeCode`),
-  CONSTRAINT `employees_ibfk_1` FOREIGN KEY (`reportsTo`) REFERENCES `employees` (`employeeNumber`),
   CONSTRAINT `employees_ibfk_2` FOREIGN KEY (`officeCode`) REFERENCES `offices` (`officeCode`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
