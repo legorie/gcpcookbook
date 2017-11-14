@@ -1,5 +1,0 @@
-customers
-('customerNumber', 'CustomerName')
-(3, u'Alice')
-(4, u'Lea')
-(5, u'David')
