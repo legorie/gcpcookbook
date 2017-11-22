@@ -29,7 +29,7 @@ def main(project_id, file_name):
     empid="121659"  # An hardcoded employee ID
     client = storage.Client()
     # https://console.cloud.google.com/storage/browser/[bucket-id]/
-    bucket = client.get_bucket('static_site')
+    bucket = client.get_bucket('static_site') # Hardcoded bucket id
     hash_object = hashlib.md5(file_name.encode())
     hex_dig = hash_object.hexdigest()
     gcs_filename = hex_dig[:5]
