@@ -4,10 +4,6 @@
  * @param {!Object} event The Cloud Functions event.
  * @param {!Function} The callback function.
  */
-//exports.processFile = function(event, callback) {
-//  console.log('Processing file: ' + event.data.name);
-//  callback();
-//};
 // Code modified from https://github.com/firebase/functions-samples/blob/master/image-sharp/functions/index.js
 /**
  * Copyright 2016 Google Inc. All Rights Reserved.
