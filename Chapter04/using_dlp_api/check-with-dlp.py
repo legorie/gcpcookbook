@@ -46,7 +46,7 @@ def main():
             json_data = json.dumps(data)
             #print(json_data)
             
-            r = requests.post('https://dlp.googleapis.com/v2beta2/projects/upbeat-aura-163616/content:inspect?key=' + api_key, data=json_data)
+            r = requests.post('https://dlp.googleapis.com/v2beta2/projects/<Project ID>/content:inspect?key=' + api_key, data=json_data)
             #print(r.status_code)
             response = r.json()
             #print(response)
