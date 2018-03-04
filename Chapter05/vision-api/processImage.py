@@ -2,7 +2,7 @@ import argparse
 from google.cloud import storage
 from google.cloud import vision
 from google.cloud.vision import types
-from PIL import Image, ImageDraw
+from PIL import Image
 
 bucket_id = 'images' #Enter bucket name
  
